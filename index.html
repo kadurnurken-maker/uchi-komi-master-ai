@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchi-Komi Master | AI Judo Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content fade-in">
+        <h1>Uchi-Komi Master.</h1>
+        <h2>Pro-level coaching. Right in your pocket.</h2>
+        <p>AI-powered Judo and BJJ technique correction in real-time.</p>
+        <a href="#aha-moment" class="btn">Discover the Tech</a>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section id="aha-moment" class="apple-card animate-on-scroll">
+        <h2>The "Aha!" Moment</h2>
+        <p>We are martial arts practitioners, and we noticed a huge problem in our gyms. Beginners constantly memorize basic movements incorrectly. Fixing a bad habit that is already built into your muscle memory is 10 times harder than learning it right from scratch.</p>
+        <p><strong>Our Solution:</strong> We built a mobile app that acts as your personal coach. You set up your phone, perform your throw entry, and our AI "sees" your skeleton and tells you exactly what to fix in real-time.</p>
+    </section>
+
+    <section class="apple-card animate-on-scroll">
+        <h2>What It Actually Does</h2>
+        <ul class="feature-list">
+            <li><strong>Live Skeleton Tracking:</strong> The app overlays a digital skeleton on your body while you move.</li>
+            <li><strong>Voice Feedback:</strong> The app speaks to you: <em>"Straighten your back!"</em> or <em>"Drop your hips lower!"</em></li>
+            <li><strong>Visual Cues:</strong> If you are doing it right, the screen flashes Green. If you make a mistake, it flashes Red.</li>
+            <li><strong>Gamification:</strong> Did 50 perfect entries? Unlock a new virtual "belt" in your profile.</li>
+        </ul>
+    </section>
+
+    <section class="apple-card animate-on-scroll">
+        <h2>Under the Hood (Tech Reqs)</h2>
+        <p>We use proven, accessible technology to make this happen:</p>
+        <ul class="feature-list">
+            <li><strong>Core Language:</strong> Python (perfect for data and AI logic).</li>
+            <li><strong>Computer Vision:</strong> Google's MediaPipe library tracks 33 joint landmarks on the human body using just a standard smartphone camera.</li>
+            <li><strong>The Math:</strong> We write algorithms to analyze the angles between your joints.</li>
+            <li><strong>Web & Hosting:</strong> The homepage is built with HTML5 & CSS3 and deployed via GitHub Pages. Code is stored in a public GitHub repository.</li>
+        </ul>
+    </section>
+
+    <section class="apple-card center-text animate-on-scroll">
+        <h2>Early Sketches & Prototype</h2>
+        <p>Here is a sneak peek of what the interface will look like. Clean, focused, and distraction-free.</p>
+        <img src="prototype.jpg" alt="App Prototype" class="product-image">
+    </section>
+
+    <section class="apple-card animate-on-scroll">
+        <h2>Timeline & Future Vision</h2>
+        <p>Our roadmap to bringing the pocket Sensei to life:</p>
+        <ul class="feature-list">
+            <li><strong>Month 1:</strong> Train the AI on basic Judo throws (Seoi-nage, O-goshi).</li>
+            <li><strong>Month 2:</strong> Build the MVP and refine skeleton tracking algorithms.</li>
+            <li><strong>Month 3:</strong> Closed beta testing in our local gym.</li>
+        </ul>
+        
+        <details class="interactive-box">
+            <summary class="btn-secondary">Reveal Charity & Future Plans 🚀</summary>
+            <div class="hidden-content">
+                <p>Once the Judo module is perfected, we plan to expand the AI to Boxing and Weightlifting. Furthermore, we will introduce a charity component: giving free premium access to martial arts schools in remote villages so kids can train safely without an expensive coach.</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="apple-card animate-on-scroll">
+        <h2 class="center-text">Meet the Squad</h2>
+        <p class="center-text">A small but mighty team combining our passion for IT and sports.</p>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="nurken.jpg" alt="Kadyr Nurken" class="avatar">
+                <h3>Kadyr Nurken</h3>
+                <span class="role">Visionary / UI Design</span>
+                <p>I came up with the core concept and I'm responsible for how the app looks and feels.</p>
+            </div>
+            <div class="team-member">
+               <img src="madi.jpg" alt="Madi" class="avatar">
+                <h3>Madi</h3>
+                <span class="role">Co-creator / Research</span>
+                <p>I work alongside Kadyr to map out the logic of the project and test our ideas in the real world.</p>
+            </div>
+            <div class="team-member">
+                <img src="nariman.jpg" alt="Nariman Mursalimov" class="avatar">
+                <h3>Nariman Mursalimov</h3>
+                <span class="role">Technical Sponsor / Code</span>
+                <p>A hackathon winner and versatile developer. From building websites to programming Arduino robots, he has a solid grasp of multiple coding languages and knows exactly how to get things done.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Kickstarter Project for Design Unit 3 | Uchi-Komi Master Team © 2026</p>
+</footer>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+    const hiddenElements = document.querySelectorAll('.animate-on-scroll');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>
